@@ -1,15 +1,16 @@
 # ThinkFlow
 Use the CoT (Chain of Thought) model to guide non - reasoning models and improve the quality of dialogue.
-# ThinkFlow
+A conversational pipeline designed for Open WebUI. It leverages the Chain of Thought (CoT) model to guide non-reasoning AI systems, enhancing dialogue quality through a two-stage process:
+1. **R1 Reasoning**: Uses the `deepseek-reasoner` model for logical inference
+2. **V3 Response**: Generates final responses with `deepseek-chat`, incorporating the reasoning results
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+Key features:
+- Async streaming support
+- Configurable temperature parameters for both stages
+- Integration with DeepSeek's dual-engine architecture
+- Automatic CoT reasoning injection into response generation
 
-专为 Open WebUI 设计的智能推理管道，集成 DeepSeek 双阶段推理引擎。
-
-```python
-from thinkflow import Pipe
-
-async def chat_handler(message: str) -> AsyncGenerator:
-    pipe = Pipe()
-    async for chunk in pipe.pipe({"messages": [{"role": "user", "content": message}]}):
-        yield chunk  # 流式输出格式：<think>...</think> + 最终响应
+The pipeline processes user input through:
+1. Reasoning phase (R1) with structured thought generation
+2. Response generation phase (V3) using augmented context
+This architecture allows non-reasoning models to benefit from explicit logical reasoning while maintaining natural conversational flow.
