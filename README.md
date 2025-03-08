@@ -1,9 +1,15 @@
+# ThinkFlow
+
+A conversational pipeline for Open WebUI using **Chain of Thought (CoT)** to enhance dialogue quality.
+
+**Open WebUI Integration**:  
+[Function ID: thinkflow_weilv](https://openwebui.com/f/weilv/thinkflow_weilv) | Creator: @weilv
+
 ## Features
 - **Async Streaming**: Real-time interactions with seamless data flow
 - **Configurable Temperature**: Adjust reasoning depth and response creativity
 - **Automatic CoT Injection**: Context-aware logical reasoning integration
 - **Modular Architecture**: Easy to extend with new reasoning/response modules
-
 
 ## How It Works
 1. **R1 Reasoning Layer**  
@@ -17,7 +23,6 @@
    - Incorporating CoT results
    - Maintaining conversational continuity
    - Adapting tone and style dynamically
-
 
 ## License
 This project is open-source under the **MIT License**. See [LICENSE](LICENSE) for details.
