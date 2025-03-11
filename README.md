@@ -3,7 +3,7 @@
 A conversational pipeline for Open WebUI using **Chain of Thought (CoT)** to enhance dialogue quality.
 
 **Open WebUI Integration**:  
-[Function ID: thinkflow_weilv](https://openwebui.com/f/weilv/thinkflow_weilv) | Creator: @weilv
+[Function ID: thinkflow_weilv](https://openwebui.com/f/weilv/thinkflow) | Creator: @weilv
 
 ## Features
 - **Async Streaming**: Real-time interactions with seamless data flow
